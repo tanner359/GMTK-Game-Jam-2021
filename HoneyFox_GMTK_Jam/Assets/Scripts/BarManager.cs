@@ -8,6 +8,7 @@ public class BarManager : MonoBehaviour
 
     public Transform seats;
     public Transform door;
+    public Transform exit;
 
     private void Awake()
     {
