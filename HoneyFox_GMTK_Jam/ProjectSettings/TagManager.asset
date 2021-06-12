@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Base Pos
+  - Drink Platform
   layers:
   - Default
   - TransparentFX

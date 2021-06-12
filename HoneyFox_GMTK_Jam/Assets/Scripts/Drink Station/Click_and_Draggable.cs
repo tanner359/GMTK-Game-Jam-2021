@@ -15,9 +15,11 @@ public class Click_and_Draggable : MonoBehaviour
     // Crafting Parameters
     bool added;
     public bool consumed_On_Use;
+    public bool is_Loose;
 
     // Resetting Position Parameters
     Vector2 home_Position;
+    Vector2 last_Home;
 
     float t;
     bool reset = true;
@@ -47,6 +49,7 @@ public class Click_and_Draggable : MonoBehaviour
 
         // Set the home position for the object to return to once dropped
         home_Position = transform.position;
+        last_Home = home_Position;
     }
 
     private void Update()
@@ -56,6 +59,15 @@ public class Click_and_Draggable : MonoBehaviour
         {
             transform.position = home_Position;
             transform.rotation = Quaternion.identity;
+        }
+
+        if (GetComponent<Ingredient>())
+        {
+            if (GetComponent<Ingredient>().on_Platform && home_Position == last_Home)
+            {
+                home_Position = (Vector2)GameObject.FindGameObjectWithTag("Base Pos").transform.position + new Vector2(0f, GetComponent<BoxCollider2D>().size.y / 2f);
+                StartCoroutine(Reset_Item());
+            }
         }
     }
 
@@ -111,17 +123,17 @@ public class Click_and_Draggable : MonoBehaviour
         rb.drag = 1f;
         rb.angularDrag = 0.05f;
 
-        if (GetComponent<Ingredient>().on_Platform)
-        {
-            home_Position = (Vector2)GameObject.FindGameObjectWithTag("Base Pos").transform.position + new Vector2(0f, GetComponent<BoxCollider2D>().size.y / 2f);
-        }
-
         // Reset the item's position
-        StartCoroutine(Reset_Item());
+        if (!is_Loose)
+            StartCoroutine(Reset_Item());
+        else
+            rb.gravityScale = 3f;
     }
 
     IEnumerator Reset_Item()
     {
+        yield return new WaitForEndOfFrame();
+
         // Smoothly interpolate the item back to its home position
         t = 0.0f;
 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Blender : MonoBehaviour
+public class Juicer : MonoBehaviour
 {
     private Drink_Craft craft_Core;
 
@@ -16,7 +16,9 @@ public class Blender : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonUp(0) && in_Border)
+        if (Input.GetMouseButton(0))
+            check_Item = false;
+        else if (Input.GetMouseButtonUp(0) && in_Border)
             check_Item = true;
     }
 
@@ -33,14 +35,14 @@ public class Blender : MonoBehaviour
 
             if (check_Item && !other.isTrigger && craft_Core.glass_Placed)
             {
-                Debug.Log("Blending item...");
+                Debug.Log("Juicing item...");
 
                 check_Item = false;
                 in_Border = false;
 
-                curr_Ingredient.ingredient_State = Ingredient.State.Blended;
+                curr_Ingredient.ingredient_State = Ingredient.State.Juiced;
 
-                craft_Core.Create_Ingredient(curr_Ingredient);
+                GameObject.FindGameObjectWithTag("Drink Platform").GetComponent<Drink_Craft>().Create_Ingredient(curr_Ingredient);
 
                 Destroy(other.gameObject);
             }
