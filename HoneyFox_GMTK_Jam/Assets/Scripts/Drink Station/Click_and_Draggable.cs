@@ -9,6 +9,7 @@ public class Click_and_Draggable : MonoBehaviour
     Transform obj_Transform;
     Rigidbody2D rb;
     SpringJoint2D spring_Joint;
+    public Ingredient ingredient;
 
     bool active;
 
@@ -61,9 +62,9 @@ public class Click_and_Draggable : MonoBehaviour
             transform.rotation = Quaternion.identity;
         }
 
-        if (GetComponent<Ingredient>())
+        if (ingredient != null)
         {
-            if (GetComponent<Ingredient>().on_Platform && home_Position == last_Home)
+            if (ingredient.on_Platform && home_Position == last_Home)
             {
                 home_Position = (Vector2)GameObject.FindGameObjectWithTag("Base Pos").transform.position + new Vector2(0f, GetComponent<BoxCollider2D>().size.y / 2f);
                 StartCoroutine(Reset_Item());

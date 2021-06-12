@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ingredient : MonoBehaviour
+[CreateAssetMenu(fileName = "Ingredient", menuName = "Custom Objects/Ingredient")]
+public class Ingredient : ScriptableObject
 {
     public string ingredient_Name; // Name of ingredient
     public bool is_Glass; // Is this object a glass?
@@ -10,6 +11,7 @@ public class Ingredient : MonoBehaviour
     public Sprite sprite; // The sprite of the ingredient
     public enum State {Raw, Blended, Juiced}; // The state the object is currently in (Raw = default state)
     public State ingredient_State;
+    public Color juice_Color;
 
     public void Init(string ing_Name, bool glass, bool plat, Sprite spr, State state)
     {

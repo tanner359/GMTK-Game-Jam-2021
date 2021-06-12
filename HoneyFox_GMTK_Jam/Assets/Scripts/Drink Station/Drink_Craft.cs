@@ -33,9 +33,9 @@ public class Drink_Craft : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.GetComponent<Ingredient>())
+        if (other.GetComponent<Click_and_Draggable>().ingredient != null)
         {
-            if (!other.GetComponent<Ingredient>().on_Platform)
+            if (!other.GetComponent<Click_and_Draggable>().ingredient.on_Platform)
                 in_Border = true;
         }
 
@@ -46,7 +46,7 @@ public class Drink_Craft : MonoBehaviour
 
             Debug.Log("Platform called the mouse up");
 
-            Ingredient marked_Ingredient = other.GetComponent<Ingredient>();
+            Ingredient marked_Ingredient = other.GetComponent<Click_and_Draggable>().ingredient;
 
             if (!marked_Ingredient.on_Platform)
             {
@@ -67,7 +67,7 @@ public class Drink_Craft : MonoBehaviour
                     Create_Ingredient(marked_Ingredient);
 
                     // Trigger an adding animation here
-                    Destroy(marked_Ingredient.transform.gameObject);
+                    Destroy(other.transform.gameObject);
                 }
             }
         }
@@ -75,14 +75,12 @@ public class Drink_Craft : MonoBehaviour
 
     public void Create_Ingredient(Ingredient marked_Ingredient)
     {
-        GameObject new_Ingredient = new GameObject();
-        new_Ingredient.AddComponent<Ingredient>();
-
-        new_Ingredient.GetComponent<Ingredient>().Init(marked_Ingredient.ingredient_Name, marked_Ingredient.is_Glass,
-                                                       marked_Ingredient.on_Platform, marked_Ingredient.sprite,
-                                                       marked_Ingredient.ingredient_State);
+        // Ingredient new_Ingredient = ScriptableObject.CreateInstance("Ingredient") as Ingredient;
+        // new_Ingredient.Init(marked_Ingredient.ingredient_Name, marked_Ingredient.is_Glass,
+        //                                                marked_Ingredient.on_Platform, marked_Ingredient.sprite,
+        //                                                marked_Ingredient.ingredient_State);
         
-        Add_Item_To_Recipe(new_Ingredient.GetComponent<Ingredient>());
+        Add_Item_To_Recipe(marked_Ingredient);
     }
 
     public void Add_Item_To_Recipe(Ingredient ing)

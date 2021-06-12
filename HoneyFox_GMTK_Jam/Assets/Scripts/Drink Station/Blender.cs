@@ -22,11 +22,11 @@ public class Blender : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.GetComponent<Ingredient>())
+        if (other.GetComponent<Click_and_Draggable>().ingredient != null)
         {
             Debug.Log("Object is hovering over blender");
 
-            Ingredient curr_Ingredient = other.GetComponent<Ingredient>();
+            Ingredient curr_Ingredient = other.GetComponent<Click_and_Draggable>().ingredient;
 
             if (!curr_Ingredient.on_Platform)
                     in_Border = true;

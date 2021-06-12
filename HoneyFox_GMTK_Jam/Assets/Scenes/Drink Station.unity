@@ -228,7 +228,6 @@ GameObject:
   - component: {fileID: 283002377}
   - component: {fileID: 283002376}
   - component: {fileID: 283002375}
-  - component: {fileID: 283002379}
   - component: {fileID: 283002373}
   m_Layer: 0
   m_Name: soda glass
@@ -275,6 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c51712953864cb43be1a5f1cb0d936b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 881ead8a2c797eb469ef34045cc7065f, type: 2}
   consumed_On_Use: 0
   is_Loose: 0
 --- !u!50 &283002376
@@ -364,23 +364,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &283002379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 283002372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16f02fa6ddcc42741a304f7bd72f774c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredient_Name: Martini Glass
-  is_Glass: 1
-  on_Platform: 0
-  sprite: {fileID: 0}
-  ingredient_State: 0
 --- !u!1 &335587037
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +374,6 @@ GameObject:
   m_Component:
   - component: {fileID: 335587042}
   - component: {fileID: 335587041}
-  - component: {fileID: 335587043}
   - component: {fileID: 335587039}
   - component: {fileID: 335587038}
   - component: {fileID: 335587040}
@@ -414,6 +396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c51712953864cb43be1a5f1cb0d936b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 6af74eec1a0d5c647bb8aee8cda1d74c, type: 2}
   consumed_On_Use: 0
   is_Loose: 0
 --- !u!50 &335587039
@@ -529,23 +512,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &335587043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335587037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16f02fa6ddcc42741a304f7bd72f774c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredient_Name: Tequila
-  is_Glass: 0
-  on_Platform: 0
-  sprite: {fileID: 21300000, guid: 257d18e82436d994db0e7b9c07cf826d, type: 3}
-  ingredient_State: 0
 --- !u!1 &872542051
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,7 +706,6 @@ GameObject:
   m_Component:
   - component: {fileID: 981118749}
   - component: {fileID: 981118748}
-  - component: {fileID: 981118750}
   - component: {fileID: 981118746}
   - component: {fileID: 981118745}
   - component: {fileID: 981118744}
@@ -789,6 +754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c51712953864cb43be1a5f1cb0d936b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 68a80fd03e8df41428d6efdf7ffc281e, type: 2}
   consumed_On_Use: 0
   is_Loose: 0
 --- !u!50 &981118746
@@ -878,23 +844,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &981118750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981118743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16f02fa6ddcc42741a304f7bd72f774c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredient_Name: Small Glass
-  is_Glass: 1
-  on_Platform: 0
-  sprite: {fileID: 0}
-  ingredient_State: 0
 --- !u!1 &1040945838
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,7 +1158,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1260256403}
   - component: {fileID: 1260256402}
-  - component: {fileID: 1260256404}
   - component: {fileID: 1260256400}
   - component: {fileID: 1260256399}
   - component: {fileID: 1260256401}
@@ -1232,6 +1180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c51712953864cb43be1a5f1cb0d936b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: b08d7196cc4fe124eac72b1e19b79439, type: 2}
   consumed_On_Use: 0
   is_Loose: 0
 --- !u!50 &1260256400
@@ -1347,23 +1296,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1260256404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260256398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16f02fa6ddcc42741a304f7bd72f774c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredient_Name: Whiskey
-  is_Glass: 0
-  on_Platform: 0
-  sprite: {fileID: 21300000, guid: f6b4443422afa6a4cbb539e4069b3617, type: 3}
-  ingredient_State: 0
 --- !u!1 &1293080897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,6 +1394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c51712953864cb43be1a5f1cb0d936b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingredient: {fileID: 0}
   consumed_On_Use: 0
   is_Loose: 1
 --- !u!50 &1293080901
@@ -1885,7 +1818,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1440453991}
   - component: {fileID: 1440453990}
-  - component: {fileID: 1440453992}
   - component: {fileID: 1440453988}
   - component: {fileID: 1440453987}
   - component: {fileID: 1440453989}
@@ -1908,6 +1840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c51712953864cb43be1a5f1cb0d936b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: 78fb1c27016f60748a941b450d85ae13, type: 2}
   consumed_On_Use: 0
   is_Loose: 0
 --- !u!50 &1440453988
@@ -2023,23 +1956,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1440453992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1440453986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16f02fa6ddcc42741a304f7bd72f774c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredient_Name: Vodka
-  is_Glass: 0
-  on_Platform: 0
-  sprite: {fileID: 21300000, guid: d62ecd3e91ce8e94f9996b5265b5e488, type: 3}
-  ingredient_State: 0
 --- !u!1 &1601892125
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,7 +2206,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2091389518}
   - component: {fileID: 2091389517}
-  - component: {fileID: 2091389519}
   - component: {fileID: 2091389515}
   - component: {fileID: 2091389514}
   - component: {fileID: 2091389513}
@@ -2339,6 +2254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c51712953864cb43be1a5f1cb0d936b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingredient: {fileID: 11400000, guid: dbe25a2d8f1bdba408a9a37c47184cd1, type: 2}
   consumed_On_Use: 0
   is_Loose: 0
 --- !u!50 &2091389515
@@ -2428,20 +2344,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2091389519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2091389512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16f02fa6ddcc42741a304f7bd72f774c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredient_Name: Wine Glass
-  is_Glass: 1
-  on_Platform: 0
-  sprite: {fileID: 0}
-  ingredient_State: 0
