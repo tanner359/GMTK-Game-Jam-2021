@@ -17,6 +17,7 @@ public class Click_and_Draggable : MonoBehaviour
     bool added;
     public bool consumed_On_Use;
     public bool is_Loose;
+    public bool clink;
 
     // Resetting Position Parameters
     Vector2 home_Position;
@@ -25,8 +26,11 @@ public class Click_and_Draggable : MonoBehaviour
     float t;
     bool reset = true;
 
+    // FX Components
+    AudioSource clink_Source;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         // Get the transform and rigidbody of the object
         obj_Transform = gameObject.GetComponent<Transform>();
@@ -49,8 +53,14 @@ public class Click_and_Draggable : MonoBehaviour
         rb.gravityScale = 0f;
 
         // Set the home position for the object to return to once dropped
+        if (ingredient != null)
+            ingredient.on_Platform = false;
+        
         home_Position = transform.position;
         last_Home = home_Position;
+
+        // Get audio source
+        clink_Source = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -154,5 +164,10 @@ public class Click_and_Draggable : MonoBehaviour
         }
 
         reset = true;
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        clink_Source.Play();
     }
 }

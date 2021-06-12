@@ -93,6 +93,11 @@ public class Drink_Craft : MonoBehaviour
         crafted_Recipe = ScriptableObject.CreateInstance("Recipe") as Recipe;
         crafted_Recipe.init(current_Ingredients);
 
-        //current_Ingredients.Clear();
+        foreach (Ingredient ingredient in current_Ingredients)
+        {
+            ingredient.on_Platform = false;
+        }
+
+        current_Ingredients.Clear();
     }
 }
