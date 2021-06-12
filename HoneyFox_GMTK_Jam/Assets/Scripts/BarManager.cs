@@ -8,7 +8,7 @@ public class BarManager : MonoBehaviour
 
     public Transform seats;
     public Transform door;
-    public Transform exit;
+    public Transform exit; 
 
     private void Awake()
     {
@@ -17,12 +17,18 @@ public class BarManager : MonoBehaviour
 
     public Seat FindSeat()
     {
+        List<Seat> availableSeats = new List<Seat>();
+
         for(int i = 0; i < seats.childCount; i++)
         {
             if (seats.GetChild(i).GetComponent<Seat>().isAvailable)
             {
-                return seats.GetChild(i).GetComponent<Seat>();
+                availableSeats.Add(seats.GetChild(i).GetComponent<Seat>());
             }
+        }
+        if(availableSeats.Count > 0)
+        {
+            return availableSeats[Random.Range(0, availableSeats.Count)];
         }
         return null;
     }

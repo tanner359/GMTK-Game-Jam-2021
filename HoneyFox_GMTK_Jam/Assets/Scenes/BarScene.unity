@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 936123163656634457, guid: 924103222e1a43345a075b3f93a67b9e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.77
+      value: -1.91
       objectReference: {fileID: 0}
     - target: {fileID: 936123163656634457, guid: 924103222e1a43345a075b3f93a67b9e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 132737140}
   - component: {fileID: 132737139}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Mix Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1213,7 +1213,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1403,7 +1403,7 @@ GameObject:
   - component: {fileID: 1709881628}
   - component: {fileID: 1709881627}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: ScreenSpace_Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1509,7 +1509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 936123163656634457, guid: 924103222e1a43345a075b3f93a67b9e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.85
+      value: 1.82
       objectReference: {fileID: 0}
     - target: {fileID: 936123163656634457, guid: 924103222e1a43345a075b3f93a67b9e, type: 3}
       propertyPath: m_LocalPosition.z

@@ -21,7 +21,7 @@ public class CustomerSystem : MonoBehaviour
     }
     private void Start()
     {
-        SpawnCustomer(customers[Random.Range(0, customers.Length - 1)]);
+        SpawnCustomer(customers[Random.Range(0, customers.Length)]);
         currentCustomers++;
         StartCoroutine(StartQueue());
     }
@@ -29,7 +29,7 @@ public class CustomerSystem : MonoBehaviour
     {
         if(BarManager.instance.FindSeat() != null && queue > 0 && currentCustomers < BarManager.instance.seats.childCount)
         {
-            SpawnCustomer(customers[Random.Range(0, customers.Length-1)]);
+            SpawnCustomer(customers[Random.Range(0, customers.Length)]);
             currentCustomers++;
             queue--;
             UpdateQueueCount();
@@ -37,7 +37,7 @@ public class CustomerSystem : MonoBehaviour
     }
     public IEnumerator StartQueue()
     {
-        yield return new WaitForSeconds(Random.Range(15, 25));
+        yield return new WaitForSeconds(Random.Range(15f, 25f));
         queue++;
         UpdateQueueCount();
         StartCoroutine(StartQueue());
@@ -55,8 +55,8 @@ public class CustomerSystem : MonoBehaviour
 
     public void SpawnCustomer(Customer customer)
     {
-        GameObject newCustomer = Instantiate(defaultCustomer, BarManager.instance.door.position, Quaternion.identity);
+        GameObject newCustomer = Instantiate(customer.gameObject, BarManager.instance.door.position, Quaternion.identity);
 
-        newCustomer = customer.gameObject;
+        newCustomer.GetComponent<CustomerBehaviour>().customerID = customer;
     }
 }
