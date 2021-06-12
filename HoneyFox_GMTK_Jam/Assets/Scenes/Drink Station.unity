@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 283002375}
   - component: {fileID: 283002374}
   - component: {fileID: 283002373}
+  - component: {fileID: 283002379}
   m_Layer: 0
   m_Name: martini
   m_TagString: Untagged
@@ -400,6 +401,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &283002379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283002372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f02fa6ddcc42741a304f7bd72f774c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient_Name: Martini Glass
+  is_Glass: 1
+  on_Platform: 0
+  sprite: {fileID: 0}
 --- !u!1 &335587037
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,6 +428,7 @@ GameObject:
   - component: {fileID: 335587042}
   - component: {fileID: 335587041}
   - component: {fileID: 335587040}
+  - component: {fileID: 335587043}
   - component: {fileID: 335587039}
   - component: {fileID: 335587038}
   m_Layer: 0
@@ -546,6 +564,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &335587043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335587037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f02fa6ddcc42741a304f7bd72f774c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient_Name: Wine
+  is_Glass: 0
+  on_Platform: 0
+  sprite: {fileID: 0}
 --- !u!1 &872542051
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,6 +709,7 @@ GameObject:
   - component: {fileID: 981118749}
   - component: {fileID: 981118748}
   - component: {fileID: 981118747}
+  - component: {fileID: 981118750}
   - component: {fileID: 981118746}
   - component: {fileID: 981118745}
   - component: {fileID: 981118744}
@@ -847,6 +882,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &981118750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981118743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f02fa6ddcc42741a304f7bd72f774c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient_Name: Small Glass
+  is_Glass: 1
+  on_Platform: 0
+  sprite: {fileID: 0}
 --- !u!1 &1150834385
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,6 +966,7 @@ GameObject:
   - component: {fileID: 1260256403}
   - component: {fileID: 1260256402}
   - component: {fileID: 1260256401}
+  - component: {fileID: 1260256404}
   - component: {fileID: 1260256400}
   - component: {fileID: 1260256399}
   m_Layer: 0
@@ -1050,6 +1102,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1260256404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260256398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f02fa6ddcc42741a304f7bd72f774c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient_Name: Champagne
+  is_Glass: 0
+  on_Platform: 0
+  sprite: {fileID: 0}
 --- !u!1 &1344273876
 GameObject:
   m_ObjectHideFlags: 0
@@ -1352,6 +1420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1418141605}
   - component: {fileID: 1418141604}
+  - component: {fileID: 1418141606}
   m_Layer: 0
   m_Name: Drink Platform
   m_TagString: Untagged
@@ -1399,6 +1468,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1418141606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418141603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cba92c47fa54ea949ae052ed30c1226a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glass_Placed: 0
 --- !u!1 &1440453986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,6 +1492,7 @@ GameObject:
   - component: {fileID: 1440453991}
   - component: {fileID: 1440453990}
   - component: {fileID: 1440453989}
+  - component: {fileID: 1440453992}
   - component: {fileID: 1440453988}
   - component: {fileID: 1440453987}
   m_Layer: 0
@@ -1545,6 +1628,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1440453992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440453986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f02fa6ddcc42741a304f7bd72f774c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient_Name: Whiskey
+  is_Glass: 0
+  on_Platform: 0
+  sprite: {fileID: 0}
 --- !u!1 &1466800810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,6 +1793,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1875755052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1875755053}
+  m_Layer: 0
+  m_Name: Plat Base Pos
+  m_TagString: Base Pos
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1875755053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875755052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.25, y: -2.87, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2091389512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,6 +1834,7 @@ GameObject:
   - component: {fileID: 2091389518}
   - component: {fileID: 2091389517}
   - component: {fileID: 2091389516}
+  - component: {fileID: 2091389519}
   - component: {fileID: 2091389515}
   - component: {fileID: 2091389514}
   - component: {fileID: 2091389513}
@@ -1899,3 +2029,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2091389519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091389512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f02fa6ddcc42741a304f7bd72f774c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient_Name: Wine Glass
+  is_Glass: 1
+  on_Platform: 0
+  sprite: {fileID: 0}

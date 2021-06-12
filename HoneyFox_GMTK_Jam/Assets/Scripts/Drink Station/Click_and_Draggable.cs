@@ -111,6 +111,11 @@ public class Click_and_Draggable : MonoBehaviour
         rb.drag = 1f;
         rb.angularDrag = 0.05f;
 
+        if (GetComponent<Ingredient>().on_Platform)
+        {
+            home_Position = (Vector2)GameObject.FindGameObjectWithTag("Base Pos").transform.position + new Vector2(0f, GetComponent<BoxCollider2D>().size.y / 2f);
+        }
+
         // Reset the item's position
         StartCoroutine(Reset_Item());
     }

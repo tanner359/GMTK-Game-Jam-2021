@@ -8,7 +8,7 @@ public class Drink_Craft : MonoBehaviour
     Collider2D collider;
 
     // Requirements List
-    bool glass_Placed;
+    public bool glass_Placed;
 
     // Keep track of ingredients added to the drink
     List<Ingredient> current_Ingredients;
@@ -16,13 +16,40 @@ public class Drink_Craft : MonoBehaviour
     private void Start()
     {
         collider = GetComponent<BoxCollider2D>();
+        current_Ingredients = new List<Ingredient>();
     }
 
-    private void OnMouseUp()
+    private void OnTriggerStay2D(Collider2D other)
     {
-        Vector2 top_Left = collider.bounds.center + new Vector3(-collider.bounds.size.x, collider.bounds.size.y) * 0.5f;
-        Vector2 bottom_Right = collider.bounds.center + new Vector3(collider.bounds.size.x, -collider.bounds.size.y) * 0.5f;
+        if (Input.GetMouseButtonUp(0))
+        {
+            Debug.Log("Platform called the mouse up");
 
-        Collider2D[] marked_Cols = Physics2D.OverlapAreaAll(top_Left, bottom_Right);
+            Ingredient marked_Ingredient = other.GetComponent<Ingredient>();
+
+            if (!marked_Ingredient.on_Platform)
+            {
+                if (marked_Ingredient.is_Glass && !glass_Placed)
+                {
+                    current_Ingredients.Add(marked_Ingredient);
+                    marked_Ingredient.on_Platform = true;
+                    glass_Placed = true;
+                }
+                else if (!marked_Ingredient.is_Glass && glass_Placed)
+                {
+                    current_Ingredients.Add(marked_Ingredient);
+                    // Trigger an adding animation here
+                    Destroy(other.transform.gameObject);
+                }
+            }
+        }
+    }
+
+    public void Craft_Drink()
+    {
+        Recipe drink_Recipe = new Recipe();
+
+        drink_Recipe.ingredients = current_Ingredients;
+        current_Ingredients.Clear();
     }
 }

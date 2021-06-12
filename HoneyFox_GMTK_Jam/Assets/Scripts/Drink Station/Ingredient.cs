@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Ingredient", menuName = "Custom Objects/Ingredient")]
-public class Ingredient : ScriptableObject
+public class Ingredient : MonoBehaviour
 {
     public string ingredient_Name; // Name of ingredient
     public bool is_Glass; // Is this object a glass?
