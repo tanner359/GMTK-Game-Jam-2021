@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 4439a9a50c118df4ea9fb66195d05119
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9086752420754235700
+    second: construction walk sheet_0
+  - first:
+      213: -414718931903232483
+    second: construction walk sheet_1
+  - first:
+      213: -8673773227086872653
+    second: construction walk sheet_2
+  - first:
+      213: -2086313713012326426
+    second: construction walk sheet_3
+  - first:
+      213: -6716533514554156443
+    second: construction walk sheet_4
+  - first:
+      213: -8289464364428872327
+    second: construction walk sheet_5
+  - first:
+      213: 7449136768141547338
+    second: construction walk sheet_6
+  - first:
+      213: -8067223023430343936
+    second: construction walk sheet_7
+  - first:
+      213: -4388780968898906094
+    second: construction walk sheet_8
+  - first:
+      213: 6357124604987185020
+    second: construction walk sheet_9
+  - first:
+      213: 124741153680460420
+    second: construction walk sheet_10
+  - first:
+      213: -2282539039380980840
+    second: construction walk sheet_11
+  - first:
+      213: -809285149861216159
+    second: construction walk sheet_12
+  - first:
+      213: -6622274890414507576
+    second: construction walk sheet_13
+  - first:
+      213: 1777735369128579427
+    second: construction walk sheet_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: construction walk sheet_0
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 4109
+        width: 462
+        height: 1507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4312af8de21aa1e70800000000000000
+      internalID: 9086752420754235700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: construction walk sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 4117
+        width: 558
+        height: 1488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d164746245f9e3af0800000000000000
+      internalID: -414718931903232483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: construction walk sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 4117
+        width: 558
+        height: 1488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf7131a43190a780800000000000000
+      internalID: -8673773227086872653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: construction walk sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3553
+        y: 4115
+        width: 412
+        height: 1508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efbfd55bbceb03e0800000000000000
+      internalID: -2086313713012326426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: construction walk sheet_4
+      rect:
+        serializedVersion: 2
+        x: 4633
+        y: 4115
+        width: 412
+        height: 1508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a5efeaa541ac2a0800000000000000
+      internalID: -6716533514554156443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: construction walk sheet_5
+      rect:
+        serializedVersion: 2
+        x: 5713
+        y: 4115
+        width: 412
+        height: 1514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97535fb7418e5fc80800000000000000
+      internalID: -8289464364428872327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: construction walk sheet_6
+      rect:
+        serializedVersion: 2
+        x: 6793
+        y: 4115
+        width: 412
+        height: 1514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47d0646c66a06760800000000000000
+      internalID: 7449136768141547338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: construction walk sheet_7
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 2199
+        width: 488
+        height: 1497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003e494f6677b0090800000000000000
+      internalID: -8067223023430343936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: construction walk sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 2199
+        width: 488
+        height: 1497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21839c726fae713c0800000000000000
+      internalID: -4388780968898906094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: construction walk sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 2193
+        width: 468
+        height: 1490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c771821952b093850800000000000000
+      internalID: 6357124604987185020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: construction walk sheet_10
+      rect:
+        serializedVersion: 2
+        x: 3499
+        y: 2193
+        width: 468
+        height: 1490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a0ff91b6b2bb100800000000000000
+      internalID: 124741153680460420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: construction walk sheet_11
+      rect:
+        serializedVersion: 2
+        x: 4633
+        y: 2199
+        width: 412
+        height: 1504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b3cbb46dac250e0800000000000000
+      internalID: -2282539039380980840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: construction walk sheet_12
+      rect:
+        serializedVersion: 2
+        x: 5713
+        y: 2199
+        width: 412
+        height: 1504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1600688a177d4c4f0800000000000000
+      internalID: -809285149861216159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: construction walk sheet_13
+      rect:
+        serializedVersion: 2
+        x: 6793
+        y: 2197
+        width: 422
+        height: 1512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9badfc214f814a0800000000000000
+      internalID: -6622274890414507576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: construction walk sheet_14
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 277
+        width: 422
+        height: 1512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3619e8d36e8cba810800000000000000
+      internalID: 1777735369128579427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5ed23797a3889ee448128c8d52a70aeb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

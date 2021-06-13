@@ -87,6 +87,7 @@ public class Click_and_Draggable : MonoBehaviour
         // Turn off reset
         reset = false;
         active = true;
+        GetComponent<BoxCollider2D>().isTrigger = true;
 
         // Get z rotation of object to correct the position of the anchor
         float rotation = obj_Transform.eulerAngles.z;
@@ -126,6 +127,7 @@ public class Click_and_Draggable : MonoBehaviour
     {
         // Disable the spring when releasing the object
         spring_Joint.enabled = false;
+        GetComponent<BoxCollider2D>().isTrigger = false;
 
         // Set this object to be inactive
         active = false;

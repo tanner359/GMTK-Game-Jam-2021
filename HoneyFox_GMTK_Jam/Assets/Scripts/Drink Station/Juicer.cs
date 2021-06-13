@@ -26,7 +26,7 @@ public class Juicer : MonoBehaviour
     {
         if (other.GetComponent<Click_and_Draggable>().ingredient != null)
         {
-            Debug.Log("Object is hovering over blender");
+            Debug.Log("Object is hovering over juicer");
 
             Ingredient curr_Ingredient = other.GetComponent<Click_and_Draggable>().ingredient;
 
@@ -42,9 +42,13 @@ public class Juicer : MonoBehaviour
 
                 curr_Ingredient.ingredient_State = Ingredient.State.Juiced;
 
-                GameObject.FindGameObjectWithTag("Drink Platform").GetComponent<Drink_Craft>().Create_Ingredient(curr_Ingredient);
+                craft_Core.Create_Ingredient(curr_Ingredient);
+
+                curr_Ingredient.ingredient_State = Ingredient.State.Raw;
 
                 Destroy(other.gameObject);
+
+                GetComponent<Animator>().Play("Juice");
             }
         }
     }
