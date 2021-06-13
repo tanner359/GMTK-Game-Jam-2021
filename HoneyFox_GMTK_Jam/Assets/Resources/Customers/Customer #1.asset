@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Customer #1
   m_EditorClassIdentifier: 
   gameObject: {fileID: 5800906068364670055, guid: cca872691f0a47e4d8dd985bc8f92a77, type: 3}
-  enterDialog: I'll take a Classic Iced Tea Please!
+  enterDialog: I'm beat!
+  orderDialog: I'll take a Classic Bee Tea
   angryExit: I'm never coming back!
   happyExit: Thanks, see you again!
   drink: {fileID: 11400000, guid: 5b3a96197aac7e945b0b44a95bff77ab, type: 2}

@@ -27,6 +27,7 @@ public class Bartender : MonoBehaviour
     public void AddOrder(Drink drink)
     {
         drinkOrders.Add(drink);
+        TicketRack.instance.CreateTicket(drink);
     }
 
     public void AddScore(int amount)

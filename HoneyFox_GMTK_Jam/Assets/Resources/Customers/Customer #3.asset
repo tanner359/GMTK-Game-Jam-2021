@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Customer #3
   m_EditorClassIdentifier: 
   gameObject: {fileID: 5800906068364670055, guid: 4c0e58efff8063845b18c7ab021b187c, type: 3}
-  enterDialog: I need something bitter.
-  angryExit: Worst bar ever!
-  happyExit: Have a good night.
-  drink: {fileID: 11400000, guid: 8d44d2a174ac64d41a3c8be734f24f17, type: 2}
+  enterDialog: Hows the Queen?
+  orderDialog: I'll take a Lemon Squeeze
+  angryExit: This service is so slow!
+  happyExit: See ya!
+  drink: {fileID: 11400000, guid: cae676939a19b054e8b4c4b22b1c4bab, type: 2}
