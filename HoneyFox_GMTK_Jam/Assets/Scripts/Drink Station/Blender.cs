@@ -8,6 +8,7 @@ public class Blender : MonoBehaviour
 
     bool in_Border;
     bool check_Item;
+    bool blend_Active;
 
     private void Start()
     {
@@ -16,7 +17,7 @@ public class Blender : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonUp(0) && in_Border)
+        if (blend_Active && in_Border)
             check_Item = true;
     }
 
@@ -44,6 +45,14 @@ public class Blender : MonoBehaviour
 
                 Destroy(other.gameObject);
             }
+
+            //blend_Active = false;
         }
+    }
+
+    public void Activate_Blender()
+    {
+        if (!blend_Active)
+        blend_Active = true;
     }
 }

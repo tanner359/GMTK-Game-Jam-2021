@@ -82,7 +82,7 @@ public class Click_and_Draggable : MonoBehaviour
         }
     }
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         // Turn off reset
         reset = false;
@@ -108,7 +108,7 @@ public class Click_and_Draggable : MonoBehaviour
         rb.angularDrag = 5f;
     }
 
-    private void OnMouseDrag()
+    public void OnMouseDrag()
     {
         // If an object is being dragged...
         if (spring_Joint.enabled)
@@ -122,7 +122,7 @@ public class Click_and_Draggable : MonoBehaviour
         }
     }
 
-    private void OnMouseUp()
+    public void OnMouseUp()
     {
         // Disable the spring when releasing the object
         spring_Joint.enabled = false;
