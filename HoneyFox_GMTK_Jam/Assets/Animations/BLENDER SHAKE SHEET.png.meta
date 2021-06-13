@@ -171,10 +171,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 1100
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -190,12 +190,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_1
       rect:
         serializedVersion: 2
-        x: 259
+        x: 260
         y: 1100
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,12 +211,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_2
       rect:
         serializedVersion: 2
-        x: 518
+        x: 520
         y: 1100
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -232,12 +232,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_3
       rect:
         serializedVersion: 2
-        x: 777
+        x: 780
         y: 1100
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_4
       rect:
         serializedVersion: 2
-        x: 1036
+        x: 1040
         y: 1100
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -274,12 +274,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_5
       rect:
         serializedVersion: 2
-        x: 1295
+        x: 1300
         y: 1100
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -295,12 +295,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_6
       rect:
         serializedVersion: 2
-        x: 1554
+        x: 1560
         y: 1100
-        width: 259.85715
+        width: 259
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -321,7 +321,7 @@ TextureImporter:
         width: 259.85715
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -337,12 +337,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_8
       rect:
         serializedVersion: 2
-        x: 259
+        x: 260
         y: 550
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -358,12 +358,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_9
       rect:
         serializedVersion: 2
-        x: 518
+        x: 520
         y: 550
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -379,12 +379,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_10
       rect:
         serializedVersion: 2
-        x: 777
+        x: 780
         y: 550
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -400,12 +400,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_11
       rect:
         serializedVersion: 2
-        x: 1036
+        x: 1040
         y: 550
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -421,12 +421,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_12
       rect:
         serializedVersion: 2
-        x: 1295
+        x: 1300
         y: 550
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -442,12 +442,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_13
       rect:
         serializedVersion: 2
-        x: 1554
+        x: 1560
         y: 550
-        width: 259.85715
+        width: 259
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -465,10 +465,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -484,12 +484,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_15
       rect:
         serializedVersion: 2
-        x: 259
+        x: 260
         y: 0
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -505,12 +505,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_16
       rect:
         serializedVersion: 2
-        x: 518
+        x: 520
         y: 0
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -526,12 +526,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_17
       rect:
         serializedVersion: 2
-        x: 777
+        x: 780
         y: 0
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -547,12 +547,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_18
       rect:
         serializedVersion: 2
-        x: 1036
+        x: 1040
         y: 0
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -568,12 +568,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_19
       rect:
         serializedVersion: 2
-        x: 1295
+        x: 1300
         y: 0
-        width: 259.85715
+        width: 260
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -589,12 +589,12 @@ TextureImporter:
       name: BLENDER SHAKE SHEET_20
       rect:
         serializedVersion: 2
-        x: 1554
+        x: 1560
         y: 0
-        width: 259.85715
+        width: 259
         height: 550
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
