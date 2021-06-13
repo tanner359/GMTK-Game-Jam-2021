@@ -128,8 +128,8 @@ public class CustomerBehaviour : MonoBehaviour
             case ActionState.waiting:
                 if (Bartender.instance.currentDrink != null)
                 {
-                    int score = CalculateScore(Bartender.instance.currentDrink, (int)happiness);
-                    Bartender.instance.AddScore(score);
+                    //int score = CalculateScore(Bartender.instance.currentDrink, (int)happiness);
+                    //Bartender.instance.AddScore(score);
                     Bartender.instance.currentDrink = null;
                     actionState = ActionState.leaving;
                     break;
@@ -138,7 +138,7 @@ public class CustomerBehaviour : MonoBehaviour
         }       
     }
 
-    public int CalculateScore(Recipe drink, int happiness)
+    /* public int CalculateScore(Recipe drink, int happiness)
     {
         int score = 0;
 
@@ -153,7 +153,7 @@ public class CustomerBehaviour : MonoBehaviour
                 }
             }
         }
-    }
+    } */
 
     #endregion
 
