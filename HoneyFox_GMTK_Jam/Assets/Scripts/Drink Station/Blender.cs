@@ -45,7 +45,10 @@ public class Blender : MonoBehaviour
 
                 curr_Ingredient.ingredient_State = Ingredient.State.Raw;
 
-                Destroy(other.gameObject);
+                other.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+
+                if (other.gameObject.CompareTag("Temp"))
+                    Destroy(other.gameObject);
 
                 GetComponent<Animator>().Play("Blender Shake");
             }
@@ -58,6 +61,22 @@ public class Blender : MonoBehaviour
     public void Activate_Blender()
     {
         if (!blend_Active)
-        blend_Active = true;
+        {
+            GetComponent<AudioSource>().Play();
+            blend_Active = true;
+        }
+    }
+
+    public void Pour()
+    {
+        GameObject[] glasses = GameObject.FindGameObjectsWithTag("Glass");
+
+        foreach(GameObject glass in glasses)
+        {
+            if (glass.GetComponent<Click_and_Draggable>().ingredient.on_Platform)
+            {
+                glass.GetComponent<Animator>().Play("Fill");
+            }
+        }
     }
 }

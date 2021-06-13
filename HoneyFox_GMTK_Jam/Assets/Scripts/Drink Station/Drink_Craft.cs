@@ -15,12 +15,15 @@ public class Drink_Craft : MonoBehaviour
     // Keep track of ingredients added to the drink
     List<Ingredient> current_Ingredients;
 
+    List<GameObject> used_Objects;
+
     public Recipe crafted_Recipe;
 
     private void Start()
     {
         collider = GetComponent<BoxCollider2D>();
         current_Ingredients = new List<Ingredient>();
+        used_Objects = new List<GameObject>();
     }
 
     private void Update()
@@ -51,6 +54,9 @@ public class Drink_Craft : MonoBehaviour
                 {
                     Debug.Log("Ingredient has not yet been on platform");
 
+                    if (!other.gameObject.CompareTag("Temp"))
+                        used_Objects.Add(other.gameObject);
+
                     if (marked_Ingredient.is_Glass && !glass_Placed)
                     {
                         Debug.Log("Glass placed on platform");
@@ -65,8 +71,24 @@ public class Drink_Craft : MonoBehaviour
 
                         Create_Ingredient(marked_Ingredient);
 
-                        // Trigger an adding animation here
-                        Destroy(other.transform.gameObject);
+                        other.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+
+                        if (other.gameObject.CompareTag("Temp"))
+                            Destroy(other.gameObject);
+                        else
+                        {
+                            GetComponent<AudioSource>().Play();
+                            
+                            GameObject[] glasses = GameObject.FindGameObjectsWithTag("Glass");
+
+                            foreach(GameObject glass in glasses)
+                            {
+                                if (glass.GetComponent<Click_and_Draggable>().ingredient.on_Platform)
+                                {
+                                    glass.GetComponent<Animator>().Play("Fill");
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -99,6 +121,20 @@ public class Drink_Craft : MonoBehaviour
             ingredient.on_Platform = false;
         }
 
+        foreach (GameObject thing in used_Objects)
+        {
+            thing.GetComponent<SpriteRenderer>().enabled = true;
+
+            if (thing.CompareTag("Glass"))
+            {
+                thing.GetComponent<Click_and_Draggable>().ingredient.on_Platform = false;
+                thing.GetComponent<Click_and_Draggable>().Full_Reset();
+            }
+        }
+
+        glass_Placed = false;
+
+        used_Objects.Clear();
         current_Ingredients.Clear();
     }
 }

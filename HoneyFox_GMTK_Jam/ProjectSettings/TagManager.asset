@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Base Pos
   - Drink Platform
+  - Glass
+  - Temp
+  - Mute
+  - FS
+  - Dyslexic
+  - Resolution
   layers:
   - Default
   - TransparentFX
