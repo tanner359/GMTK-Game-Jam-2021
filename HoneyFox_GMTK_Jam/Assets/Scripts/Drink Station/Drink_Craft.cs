@@ -37,37 +37,37 @@ public class Drink_Craft : MonoBehaviour
         {
             if (!other.GetComponent<Click_and_Draggable>().ingredient.on_Platform)
                 in_Border = true;
-        }
 
-        if (check_Item && !other.isTrigger)
-        {
-            check_Item = false;
-            in_Border = false;
-
-            Debug.Log("Platform called the mouse up");
-
-            Ingredient marked_Ingredient = other.GetComponent<Click_and_Draggable>().ingredient;
-
-            if (!marked_Ingredient.on_Platform)
+            if (check_Item && !other.isTrigger)
             {
-                Debug.Log("Ingredient has not yet been on platform");
+                check_Item = false;
+                in_Border = false;
 
-                if (marked_Ingredient.is_Glass && !glass_Placed)
+                Debug.Log("Platform called the mouse up");
+
+                Ingredient marked_Ingredient = other.GetComponent<Click_and_Draggable>().ingredient;
+
+                if (!marked_Ingredient.on_Platform)
                 {
-                    Debug.Log("Glass placed on platform");
-                    Add_Item_To_Recipe(marked_Ingredient);
-                    marked_Ingredient.on_Platform = true;
-                    glass_Placed = true;
-                    other.isTrigger = true;
-                }
-                else if (!marked_Ingredient.is_Glass && glass_Placed)
-                {
-                    Debug.Log("Ingredient placed in glass");
+                    Debug.Log("Ingredient has not yet been on platform");
 
-                    Create_Ingredient(marked_Ingredient);
+                    if (marked_Ingredient.is_Glass && !glass_Placed)
+                    {
+                        Debug.Log("Glass placed on platform");
+                        Add_Item_To_Recipe(marked_Ingredient);
+                        marked_Ingredient.on_Platform = true;
+                        glass_Placed = true;
+                        other.isTrigger = true;
+                    }
+                    else if (!marked_Ingredient.is_Glass && glass_Placed)
+                    {
+                        Debug.Log("Ingredient placed in glass");
 
-                    // Trigger an adding animation here
-                    Destroy(other.transform.gameObject);
+                        Create_Ingredient(marked_Ingredient);
+
+                        // Trigger an adding animation here
+                        Destroy(other.transform.gameObject);
+                    }
                 }
             }
         }
@@ -93,6 +93,11 @@ public class Drink_Craft : MonoBehaviour
         crafted_Recipe = ScriptableObject.CreateInstance("Recipe") as Recipe;
         crafted_Recipe.init(current_Ingredients);
 
-        //current_Ingredients.Clear();
+        foreach (Ingredient ingredient in current_Ingredients)
+        {
+            ingredient.on_Platform = false;
+        }
+
+        current_Ingredients.Clear();
     }
 }
