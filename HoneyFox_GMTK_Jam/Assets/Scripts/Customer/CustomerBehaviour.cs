@@ -12,17 +12,24 @@ public class CustomerBehaviour : MonoBehaviour
     public Vector3 targetPostion;
     public Seat targetSeat;
     public bool isSeated;
-    public SpriteRenderer happinessGauge;
+    public ParticleSystemRenderer happinessParticles;
     public float happiness = 100;
     public TMP_Text dialogBox;
     public GameObject dialogBackround;
     public GameObject actionButton;
+    public Animator animator;
+
+    [Header("Materials")]
+    public Material angry;
+    public Material happy;
+    public Material neutral;
 
     private void Start()
     {
         targetSeat = BarManager.instance.FindSeat();
         targetSeat.isAvailable = false;
         targetPostion = targetSeat.gameObject.transform.position;
+        GetComponent<SpriteRenderer>().sortingOrder = targetSeat.GetComponent<SpriteRenderer>().sortingOrder + 1;
     }
 
     private void Update()
@@ -30,20 +37,25 @@ public class CustomerBehaviour : MonoBehaviour
         switch (actionState)
         {
             case ActionState.entering:
+                animator.SetBool("Sitting", false);
                 break;
 
             case ActionState.leaving:
                 targetPostion = BarManager.instance.exit.transform.position;
+                animator.SetBool("Sitting", false);
                 targetSeat.isAvailable = true;
                 actionButton.SetActive(false);
+                GetComponent<SpriteRenderer>().flipX = true;
                 break;
 
             case ActionState.waiting:
+                animator.SetBool("Sitting", true);
                 actionButton.SetActive(true);
                 actionButton.GetComponentInChildren<TMP_Text>().text = "Serve";
                 break;
 
             case ActionState.ordering:
+                animator.SetBool("Sitting", true);
                 actionButton.SetActive(true);
                 actionButton.GetComponentInChildren<TMP_Text>().text = "Take Order";
                 break;
@@ -95,18 +107,28 @@ public class CustomerBehaviour : MonoBehaviour
     }
     public IEnumerator HappinessDecay()
     {
-        if(happiness == 0) {        
+        if(happiness == 0) {
+            happinessParticles.material = angry;
             StopCoroutine(HappinessDecay());
             StartCoroutine(Dialog(customerID.angryExit));          
             actionState = ActionState.leaving;
         }
+        else if(happiness < 66 && happiness > 33)
+        {
+            happinessParticles.material = neutral;
+        }
+        else if (happiness < 33)
+        {
+            happinessParticles.material = angry;
+        }
+
         if (happiness == 100)
         {
+            happinessParticles.material = happy;
             yield return new WaitForSeconds(5f);
         }
         yield return new WaitForSeconds(1f);
         happiness--;
-        happinessGauge.color = Color.HSVToRGB(happiness/360.0f, 1.0f, 1.0f);
         StartCoroutine(HappinessDecay());
     }
     #endregion
@@ -128,8 +150,8 @@ public class CustomerBehaviour : MonoBehaviour
             case ActionState.waiting:
                 if (Bartender.instance.currentDrink != null)
                 {
-                    //int score = CalculateScore(Bartender.instance.currentDrink, (int)happiness);
-                    //Bartender.instance.AddScore(score);
+                    int score = CalculateScore(Bartender.instance.currentDrink, (int)happiness);
+                    Bartender.instance.AddScore(score);
                     Bartender.instance.currentDrink = null;
                     actionState = ActionState.leaving;
                     break;
@@ -138,22 +160,28 @@ public class CustomerBehaviour : MonoBehaviour
         }       
     }
 
-    /* public int CalculateScore(Recipe drink, int happiness)
+    public int CalculateScore(Recipe drink, int happiness)
     {
         int score = 0;
+        int bonus = 0;
 
-        for(int i = 0; i < drink.ingredients.Count; i++)
+        for (int i = 0; i < drink.ingredients.Count; i++)
         {
             Ingredient currentIngredient = drink.ingredients[i];
             for (int k = 0; k < customerID.drink.recipe.ingredients.Count; k++)
             {
-                if(currentIngredient == customerID.drink.recipe.ingredients[k])
+                if (currentIngredient == customerID.drink.recipe.ingredients[k])
                 {
                     score += 10;
+                    k = 9999;
                 }
-            }
+            }            
         }
-    } */
+
+        bonus = (int)(happiness * 0.01f) * score;
+
+        return score + bonus;  
+    }
 
     #endregion
 

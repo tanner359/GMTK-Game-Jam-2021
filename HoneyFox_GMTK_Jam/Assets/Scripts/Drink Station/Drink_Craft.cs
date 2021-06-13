@@ -91,6 +91,7 @@ public class Drink_Craft : MonoBehaviour
     public void Craft_Drink()
     {
         crafted_Recipe = ScriptableObject.CreateInstance("Recipe") as Recipe;
+        Bartender.instance.currentDrink = crafted_Recipe;
         crafted_Recipe.init(current_Ingredients);
 
         foreach (Ingredient ingredient in current_Ingredients)
