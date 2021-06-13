@@ -58,7 +58,7 @@ public class CustomerBehaviour : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, targetPostion, 0.01f);    
     }
 
-
+    #region Collision Triggers
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<Seat>() == targetSeat)
@@ -67,21 +67,11 @@ public class CustomerBehaviour : MonoBehaviour
             StartCoroutine(Dialog(customerID.enterDialog));
         }
     }
-
-    public IEnumerator Dialog(string dialog)
-    {
-        dialogBackround.SetActive(true);
-        dialogBox.text = dialog;
-        yield return new WaitForSeconds(6f);
-        dialogBackround.SetActive(false);
-        dialogBox.text = "";
-    }
-
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.GetComponent<Seat>() == targetSeat)
         {
-            if(happiness < 50)
+            if (happiness < 50)
             {
                 StopCoroutine(Dialog(customerID.angryExit));
                 StartCoroutine(Dialog(customerID.angryExit));
@@ -92,7 +82,17 @@ public class CustomerBehaviour : MonoBehaviour
         }
     }
 
-    bool isWaiting;
+    #endregion
+
+    #region Coroutines
+    public IEnumerator Dialog(string dialog)
+    {
+        dialogBackround.SetActive(true);
+        dialogBox.text = dialog;
+        yield return new WaitForSeconds(6f);
+        dialogBackround.SetActive(false);
+        dialogBox.text = "";
+    }
     public IEnumerator HappinessDecay()
     {
         if(happiness == 0) {        
@@ -109,4 +109,52 @@ public class CustomerBehaviour : MonoBehaviour
         happinessGauge.color = Color.HSVToRGB(happiness/360.0f, 1.0f, 1.0f);
         StartCoroutine(HappinessDecay());
     }
+    #endregion
+
+    #region Functions
+
+    public void CustomerAction()
+    {
+        switch (actionState)
+        {
+            default:
+                break;
+
+            case ActionState.ordering:
+                Bartender.instance.AddOrder(customerID.drink);
+                actionState = ActionState.waiting;
+                break;
+
+            case ActionState.waiting:
+                if (Bartender.instance.currentDrink != null)
+                {
+                    int score = CalculateScore(Bartender.instance.currentDrink, (int)happiness);
+                    Bartender.instance.AddScore(score);
+                    Bartender.instance.currentDrink = null;
+                    actionState = ActionState.leaving;
+                    break;
+                }
+                break;
+        }       
+    }
+
+    public int CalculateScore(Recipe drink, int happiness)
+    {
+        int score = 0;
+
+        for(int i = 0; i < drink.ingredients.Count; i++)
+        {
+            Ingredient currentIngredient = drink.ingredients[i];
+            for (int k = 0; k < customerID.drink.recipe.ingredients.Count; k++)
+            {
+                if(currentIngredient == customerID.drink.recipe.ingredients[k])
+                {
+                    score += 10;
+                }
+            }
+        }
+    }
+
+    #endregion
+
 }

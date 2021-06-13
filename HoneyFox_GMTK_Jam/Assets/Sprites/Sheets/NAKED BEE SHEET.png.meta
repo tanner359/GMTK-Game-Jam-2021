@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 31edc47435159214694f750c7aaa83db
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8718302159506742536
+    second: NAKED BEE SHEET_0
+  - first:
+      213: -2199424036655416547
+    second: NAKED BEE SHEET_1
+  - first:
+      213: -7996464482382010957
+    second: NAKED BEE SHEET_2
+  - first:
+      213: -426266395763334734
+    second: NAKED BEE SHEET_3
+  - first:
+      213: -4385634625209087341
+    second: NAKED BEE SHEET_4
+  - first:
+      213: 2146578825460148147
+    second: NAKED BEE SHEET_5
+  - first:
+      213: 7759021475473328775
+    second: NAKED BEE SHEET_6
+  - first:
+      213: 6637087853574435594
+    second: NAKED BEE SHEET_7
+  - first:
+      213: -3745176657999887907
+    second: NAKED BEE SHEET_8
+  - first:
+      213: -4173055716915750801
+    second: NAKED BEE SHEET_9
+  - first:
+      213: 7418495755315320095
+    second: NAKED BEE SHEET_10
+  - first:
+      213: -2820097999466157612
+    second: NAKED BEE SHEET_11
+  - first:
+      213: 3320300646785438190
+    second: NAKED BEE SHEET_12
+  - first:
+      213: -5598634746953481628
+    second: NAKED BEE SHEET_13
+  - first:
+      213: -3051243539431076113
+    second: NAKED BEE SHEET_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NAKED BEE SHEET_0
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 6461
+        width: 462
+        height: 1507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f26412a06e520780800000000000000
+      internalID: -8718302159506742536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NAKED BEE SHEET_1
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 6469
+        width: 558
+        height: 1464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1bb2b0ed731a71e0800000000000000
+      internalID: -2199424036655416547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NAKED BEE SHEET_2
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 6469
+        width: 558
+        height: 1464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5a79c9be9d60190800000000000000
+      internalID: -7996464482382010957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NAKED BEE SHEET_3
+      rect:
+        serializedVersion: 2
+        x: 3553
+        y: 6467
+        width: 412
+        height: 1508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b127d4b8f8951af0800000000000000
+      internalID: -426266395763334734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NAKED BEE SHEET_4
+      rect:
+        serializedVersion: 2
+        x: 4633
+        y: 6467
+        width: 412
+        height: 1508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a42c16b881323c0800000000000000
+      internalID: -4385634625209087341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NAKED BEE SHEET_5
+      rect:
+        serializedVersion: 2
+        x: 5713
+        y: 6467
+        width: 412
+        height: 1514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b76de5911e2acd10800000000000000
+      internalID: 2146578825460148147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NAKED BEE SHEET_6
+      rect:
+        serializedVersion: 2
+        x: 6793
+        y: 6467
+        width: 412
+        height: 1514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a07324ce49dab60800000000000000
+      internalID: 7759021475473328775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NAKED BEE SHEET_7
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 4551
+        width: 488
+        height: 1497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a033d5fec3cab1c50800000000000000
+      internalID: 6637087853574435594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NAKED BEE SHEET_8
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 4551
+        width: 488
+        height: 1497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd105de1ca5760cc0800000000000000
+      internalID: -3745176657999887907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NAKED BEE SHEET_9
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 4545
+        width: 468
+        height: 1468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68d25d6fe35616c0800000000000000
+      internalID: -4173055716915750801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NAKED BEE SHEET_10
+      rect:
+        serializedVersion: 2
+        x: 3499
+        y: 4545
+        width: 468
+        height: 1468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f151057a59ac3f660800000000000000
+      internalID: 7418495755315320095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NAKED BEE SHEET_11
+      rect:
+        serializedVersion: 2
+        x: 4633
+        y: 4551
+        width: 412
+        height: 1504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9a70e9fcffcd8d0800000000000000
+      internalID: -2820097999466157612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NAKED BEE SHEET_12
+      rect:
+        serializedVersion: 2
+        x: 5713
+        y: 4551
+        width: 412
+        height: 1504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee15527b8d3141e20800000000000000
+      internalID: 3320300646785438190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NAKED BEE SHEET_13
+      rect:
+        serializedVersion: 2
+        x: 6793
+        y: 4549
+        width: 422
+        height: 1512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462cda84c57ad42b0800000000000000
+      internalID: -5598634746953481628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NAKED BEE SHEET_14
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 2629
+        width: 422
+        height: 1512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee4105ca2ec7a5d0800000000000000
+      internalID: -3051243539431076113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2fb983e91ac3fc14d80ce1ce9a98a6f2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
