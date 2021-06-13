@@ -46,7 +46,7 @@ public class Blender : MonoBehaviour
                 Destroy(other.gameObject);
             }
 
-            //blend_Active = false;
+            blend_Active = false;
         }
     }
 
