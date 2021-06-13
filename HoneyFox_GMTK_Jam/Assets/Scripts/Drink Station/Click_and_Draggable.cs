@@ -143,6 +143,13 @@ public class Click_and_Draggable : MonoBehaviour
             rb.gravityScale = 3f;
     }
 
+    public void Full_Reset()
+    {
+        home_Position = last_Home;
+        GetComponent<Animator>().SetTrigger("Empty");
+        StartCoroutine(Reset_Item());
+    }
+
     IEnumerator Reset_Item()
     {
         yield return new WaitForEndOfFrame();

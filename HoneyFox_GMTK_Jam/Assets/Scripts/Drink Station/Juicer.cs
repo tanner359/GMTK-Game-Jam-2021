@@ -46,7 +46,10 @@ public class Juicer : MonoBehaviour
 
                 curr_Ingredient.ingredient_State = Ingredient.State.Raw;
 
-                Destroy(other.gameObject);
+                other.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+
+                if (other.gameObject.CompareTag("Temp"))
+                    Destroy(other.gameObject);
 
                 GetComponent<Animator>().Play("Juice");
             }
