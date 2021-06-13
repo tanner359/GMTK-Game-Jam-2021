@@ -8,6 +8,8 @@ TagManager:
   - Drink Platform
   - Glass
   - Temp
+  - Mute
+  - FS
   layers:
   - Default
   - TransparentFX
