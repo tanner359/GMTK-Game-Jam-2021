@@ -5,10 +5,14 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 {
     public Canvas options_Menu;
+    public GameObject game_Manager;
 
     public void Start_Game()
     {
         // Start Game Sequence
+        game_Manager.GetComponent<CustomerSystem>().enabled = true;
+        game_Manager.GetComponent<TimeManager>().enabled = true;
+        GetComponent<Canvas>().enabled = false;
     }
 
     public void Options()
