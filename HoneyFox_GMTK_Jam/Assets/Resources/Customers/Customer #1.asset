@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObject: {fileID: 8039568383942071265, guid: 14379ccc02735994494861b3c5d5133a, type: 3}
   enterDialog: Hey, Bartender get me a rum and honey!
-  exitDialog: Thanks!, see you next week.
+  angryExit: I'm never coming back!
+  happyExit: Thanks, see you again!
+  recipe: {fileID: 0}

@@ -9,5 +9,5 @@ public class Customer : ScriptableObject
     public string enterDialog;
     public string angryExit;
     public string happyExit;
-    public Recipe recipe;
+    public Drink drink;
 }

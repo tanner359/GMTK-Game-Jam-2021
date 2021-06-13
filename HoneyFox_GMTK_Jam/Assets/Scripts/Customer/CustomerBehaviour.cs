@@ -6,29 +6,53 @@ public class CustomerBehaviour : MonoBehaviour
 {
     public Customer customerID;
 
+    public enum ActionState {entering, ordering, waiting, leaving};
+
+    public ActionState actionState = ActionState.entering;
     public Vector3 targetPostion;
     public Seat targetSeat;
     public bool isSeated;
-    public bool isLeaving;
     public SpriteRenderer happinessGauge;
     public float happiness = 100;
     public TMP_Text dialogBox;
     public GameObject dialogBackround;
+    public GameObject actionButton;
 
     private void Start()
     {
         targetSeat = BarManager.instance.FindSeat();
         targetSeat.isAvailable = false;
-        Debug.Log(targetSeat);
         targetPostion = targetSeat.gameObject.transform.position;
     }
 
     private void Update()
     {
-        if (!isWaiting && isSeated)
+        switch (actionState)
+        {
+            case ActionState.entering:
+                break;
+
+            case ActionState.leaving:
+                targetPostion = BarManager.instance.exit.transform.position;
+                targetSeat.isAvailable = true;
+                actionButton.SetActive(false);
+                break;
+
+            case ActionState.waiting:
+                actionButton.SetActive(true);
+                actionButton.GetComponentInChildren<TMP_Text>().text = "Serve";
+                break;
+
+            case ActionState.ordering:
+                actionButton.SetActive(true);
+                actionButton.GetComponentInChildren<TMP_Text>().text = "Take Order";
+                break;
+        }
+
+        if (actionState == ActionState.entering && isSeated)
         {
             StartCoroutine(HappinessDecay());
-            isWaiting = true;
+            actionState = ActionState.ordering;
         }
 
         transform.position = Vector3.MoveTowards(transform.position, targetPostion, 0.01f);    
@@ -68,16 +92,13 @@ public class CustomerBehaviour : MonoBehaviour
         }
     }
 
-
     bool isWaiting;
     public IEnumerator HappinessDecay()
     {
-        if(happiness == 0) {
+        if(happiness == 0) {        
             StopCoroutine(HappinessDecay());
-            StartCoroutine(Dialog(customerID.angryExit));
-            targetPostion = BarManager.instance.exit.transform.position;
-            targetSeat.isAvailable = true;
-            isLeaving = true;
+            StartCoroutine(Dialog(customerID.angryExit));          
+            actionState = ActionState.leaving;
         }
         if (happiness == 100)
         {

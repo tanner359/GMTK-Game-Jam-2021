@@ -25,7 +25,8 @@ public class TimeManager : MonoBehaviour
         {
             int minutes = (int)gameTime % 60;
 
-            int hour = (int)gameTime / 60;
+            int hour = (int)((gameTime / 60)%12);
+            if(hour == 0) { hour = 12; }
             if (gameTime < 720f)
             {
                 timeText.text = hour + ":" + minutes.ToString("00") + "PM";
