@@ -16,5 +16,5 @@ MonoBehaviour:
   is_Glass: 0
   on_Platform: 0
   sprite: {fileID: 21300000, guid: 6e0874c8e6cf60445bd0bb01b03e9cad, type: 3}
-  ingredient_State: 0
+  ingredient_State: 1
   juice_Color: {r: 0.740566, g: 1, b: 1, a: 0.70980394}

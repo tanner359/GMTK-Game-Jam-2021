@@ -1042,7 +1042,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &73044417
 MonoBehaviour:
@@ -1069,8 +1069,8 @@ MonoBehaviour:
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
   m_OverlapOperation: 0
-  m_NormalMapDistance: 51.56
-  m_NormalMapQuality: 2
+  m_NormalMapDistance: 48.12
+  m_NormalMapQuality: 1
   m_UseNormalMap: 0
   m_ShadowIntensityEnabled: 1
   m_ShadowIntensity: 0.75
@@ -1234,7 +1234,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &101950598
 MonoBehaviour:
@@ -1261,8 +1261,8 @@ MonoBehaviour:
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
   m_OverlapOperation: 0
-  m_NormalMapDistance: 51.56
-  m_NormalMapQuality: 2
+  m_NormalMapDistance: 48.12
+  m_NormalMapQuality: 1
   m_UseNormalMap: 0
   m_ShadowIntensityEnabled: 1
   m_ShadowIntensity: 0.75
@@ -5305,6 +5305,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 659823141}
+        m_TargetAssemblyTypeName: UI_Control, Assembly-CSharp
+        m_MethodName: MovetoBar
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1709881626}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -22691,7 +22703,6 @@ MonoBehaviour:
   ticketPrefab: {fileID: 7336755689928680614, guid: b533c83e7f2992240b92e966d7892b21, type: 3}
   tickets: {fileID: 1751219936}
   ingredient: {fileID: 420300758826575991, guid: 2ddf2f36e1b3b4b4fa6d7c6be993b499, type: 3}
-  orderNum: 0
 --- !u!1 &1637528994
 GameObject:
   m_ObjectHideFlags: 0
@@ -27687,7 +27698,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1709881627
 MonoBehaviour:
   m_ObjectHideFlags: 0
