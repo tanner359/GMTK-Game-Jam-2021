@@ -128,7 +128,7 @@ public class CustomerBehaviour : MonoBehaviour
             happinessParticles.material = happy;
             yield return new WaitForSeconds(5f);
         }
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.25f);
         happiness--;
         StartCoroutine(HappinessDecay());
     }
@@ -146,6 +146,7 @@ public class CustomerBehaviour : MonoBehaviour
             case ActionState.ordering:
                 Bartender.instance.AddOrder(customerID.drink);
                 actionState = ActionState.waiting;
+                StartCoroutine(Dialog(customerID.orderDialog));
                 break;
 
             case ActionState.waiting:
@@ -167,14 +168,14 @@ public class CustomerBehaviour : MonoBehaviour
         int score = 0;
         int bonus = 0;
 
-        for (int i = 0; i < drink.ingredients.Count; i++)
+        for (int i = 0; i < customerID.drink.recipe.ingredients.Count; i++)
         {
-            Ingredient currentIngredient = drink.ingredients[i];
-            for (int k = 0; k < customerID.drink.recipe.ingredients.Count; k++)
+            Ingredient currentIngredient = customerID.drink.recipe.ingredients[i];
+            for (int k = 0; k < drink.ingredients.Count; k++)
             {
                 if (currentIngredient == customerID.drink.recipe.ingredients[k])
                 {
-                    score += 10;
+                    score += 2;
                     k = 9999;
                 }
             }            

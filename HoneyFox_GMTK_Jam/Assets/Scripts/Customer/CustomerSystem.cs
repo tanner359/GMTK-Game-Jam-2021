@@ -37,7 +37,7 @@ public class CustomerSystem : MonoBehaviour
     }
     public IEnumerator StartQueue()
     {
-        yield return new WaitForSeconds(Random.Range(15f, 25f));
+        yield return new WaitForSeconds(35f);
         queue++;
         UpdateQueueCount();
         StartCoroutine(StartQueue());

@@ -11,8 +11,6 @@ public class TicketRack : MonoBehaviour
     public Transform tickets;
     public GameObject ingredient;
 
-    public int orderNum = 0;
-
     private void Awake()
     {
         instance = this;
@@ -24,8 +22,7 @@ public class TicketRack : MonoBehaviour
 
         ticket.GetComponent<Ticket>().drink = drink;
 
-        ticket.transform.Find("OrderNumber").GetComponent<TMP_Text>().text = "Order #" + orderNum + 1;
-        orderNum++;
+        ticket.transform.Find("OrderNumber").GetComponent<TMP_Text>().text = "Order #" + Random.Range(1, 999);
         ticket.transform.Find("DrinkName").GetComponent<TMP_Text>().text = drink.drink_Name;
 
         for(int i = 0; i < drink.recipe.ingredients.Count; i++)
