@@ -32,6 +32,9 @@ public class Blender : MonoBehaviour
             if (!curr_Ingredient.on_Platform)
                     in_Border = true;
 
+            if (in_Border && !other.GetComponent<Click_and_Draggable>().is_Loose)
+                other.GetComponent<Click_and_Draggable>().is_Loose = true;
+
             if (check_Item && !other.isTrigger && craft_Core.glass_Placed)
             {
                 Debug.Log("Blending item...");
@@ -56,6 +59,12 @@ public class Blender : MonoBehaviour
             if (!check_Item || !craft_Core.glass_Placed)
                 blend_Active = false;
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (!other.CompareTag("Temp"))
+        other.GetComponent<Click_and_Draggable>().is_Loose = false;
     }
 
     public void Activate_Blender()
