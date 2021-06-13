@@ -43,10 +43,15 @@ public class Blender : MonoBehaviour
 
                 craft_Core.Create_Ingredient(curr_Ingredient);
 
+                curr_Ingredient.ingredient_State = Ingredient.State.Raw;
+
                 Destroy(other.gameObject);
+
+                GetComponent<Animator>().Play("Blender Shake");
             }
 
-            blend_Active = false;
+            if (!check_Item || !craft_Core.glass_Placed)
+                blend_Active = false;
         }
     }
 
