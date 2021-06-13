@@ -75,12 +75,12 @@ public class Drink_Craft : MonoBehaviour
 
     public void Create_Ingredient(Ingredient marked_Ingredient)
     {
-        // Ingredient new_Ingredient = ScriptableObject.CreateInstance("Ingredient") as Ingredient;
-        // new_Ingredient.Init(marked_Ingredient.ingredient_Name, marked_Ingredient.is_Glass,
-        //                                                marked_Ingredient.on_Platform, marked_Ingredient.sprite,
-        //                                                marked_Ingredient.ingredient_State);
+        Ingredient new_Ingredient = ScriptableObject.CreateInstance("Ingredient") as Ingredient;
+        new_Ingredient.Init(marked_Ingredient.ingredient_Name, marked_Ingredient.is_Glass,
+                                                    marked_Ingredient.on_Platform, marked_Ingredient.sprite,
+                                                    marked_Ingredient.ingredient_State);
         
-        Add_Item_To_Recipe(marked_Ingredient);
+        Add_Item_To_Recipe(new_Ingredient);
     }
 
     public void Add_Item_To_Recipe(Ingredient ing)
