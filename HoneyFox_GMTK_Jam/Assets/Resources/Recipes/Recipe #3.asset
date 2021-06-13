@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5dfc756ddd8254248b5c5ee5c4e5266d, type: 3}
-  m_Name: Recipe #2
+  m_Name: Recipe #3
   m_EditorClassIdentifier: 
   ingredients:
-  - {fileID: 11400000, guid: 6af74eec1a0d5c647bb8aee8cda1d74c, type: 2}
-  - {fileID: 11400000, guid: 1c490b571614c60409af1503c7220fb5, type: 2}
-  - {fileID: 11400000, guid: dbe25a2d8f1bdba408a9a37c47184cd1, type: 2}
+  - {fileID: 11400000, guid: 881ead8a2c797eb469ef34045cc7065f, type: 2}
+  - {fileID: 11400000, guid: a2f95f8fa2780734ca482fb19521b504, type: 2}
+  - {fileID: 11400000, guid: d14f629d24bf7b845a8232b7d3e21b52, type: 2}
+  - {fileID: 11400000, guid: eec938ef89f6b6d45b5c41c882b55242, type: 2}

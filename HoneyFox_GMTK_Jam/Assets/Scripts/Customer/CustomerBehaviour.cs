@@ -108,10 +108,11 @@ public class CustomerBehaviour : MonoBehaviour
     public IEnumerator HappinessDecay()
     {
         if(happiness == 0) {
-            happinessParticles.material = angry;
-            StopCoroutine(HappinessDecay());
+            happinessParticles.material = angry;         
             StartCoroutine(Dialog(customerID.angryExit));          
             actionState = ActionState.leaving;
+            TicketRack.instance.RemoveTicket(customerID.drink);
+            StopCoroutine(HappinessDecay());
         }
         else if(happiness < 66 && happiness > 33)
         {
@@ -154,6 +155,7 @@ public class CustomerBehaviour : MonoBehaviour
                     Bartender.instance.AddScore(score);
                     Bartender.instance.currentDrink = null;
                     actionState = ActionState.leaving;
+                    TicketRack.instance.RemoveTicket(customerID.drink);
                     break;
                 }
                 break;
@@ -178,7 +180,7 @@ public class CustomerBehaviour : MonoBehaviour
             }            
         }
 
-        bonus = (int)(happiness * 0.01f) * score;
+        bonus = (int)((happiness * 0.01f) * score);
 
         return score + bonus;  
     }

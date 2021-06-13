@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Customer #2
   m_EditorClassIdentifier: 
   gameObject: {fileID: 5800906068364670055, guid: d0c5af3be4e50cb4eb72554d483015b1, type: 3}
-  enterDialog: I need something bitter.
+  enterDialog: Hey, whats up?
+  orderDialog: I'll take a Bee's Breeze
   angryExit: Worst bar ever!
   happyExit: Have a good night.
   drink: {fileID: 11400000, guid: 8d44d2a174ac64d41a3c8be734f24f17, type: 2}

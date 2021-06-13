@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16f02fa6ddcc42741a304f7bd72f774c, type: 3}
-  m_Name: Nectar
+  m_Name: Blended Ice
   m_EditorClassIdentifier: 
-  ingredient_Name: Nectar
+  ingredient_Name: Ice
   is_Glass: 0
   on_Platform: 0
-  sprite: {fileID: 21300000, guid: 1919225e74545d94188855cc7abe98c4, type: 3}
+  sprite: {fileID: 21300000, guid: 6e0874c8e6cf60445bd0bb01b03e9cad, type: 3}
   ingredient_State: 0
-  juice_Color: {r: 0.92549026, g: 0.3529412, b: 0.20000002, a: 1}
+  juice_Color: {r: 0.740566, g: 1, b: 1, a: 0.70980394}

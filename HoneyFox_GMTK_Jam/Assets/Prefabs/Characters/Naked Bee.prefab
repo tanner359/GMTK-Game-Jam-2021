@@ -4926,7 +4926,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4952716567356430921}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 205739561540397687}
+        m_TargetAssemblyTypeName: CustomerBehaviour, Assembly-CSharp
+        m_MethodName: CustomerAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4544903383380158438
 GameObject:
   m_ObjectHideFlags: 0
